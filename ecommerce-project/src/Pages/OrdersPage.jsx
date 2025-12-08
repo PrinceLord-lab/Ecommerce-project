@@ -1,11 +1,12 @@
 import { Header } from "../components/Header";
+import { NavLink } from "react-router";
 import "./OrdersPage.css";
 
 export function OrdersPage() {
   return (
     <>
       <title>Orders</title>
-      <link rel="icon" type="image/svg+xml" href="orders-favicon.png" />
+      <link rel="icon" type="image/svg+xml" href="/images/orders-favicon.png" />
 
       <Header />
 
@@ -55,11 +56,11 @@ export function OrdersPage() {
               </div>
 
               <div className="product-actions">
-                <a href="/tracking">
+                <NavLink to="/tracking">
                   <button className="track-package-button button-secondary">
                     Track package
                   </button>
-                </a>
+                </NavLink>
               </div>
 
               <div className="product-image-container">
@@ -84,11 +85,11 @@ export function OrdersPage() {
               </div>
 
               <div className="product-actions">
-                <a href="/tracking">
+                <NavLink to="/tracking">
                   <button className="track-package-button button-secondary">
                     Track package
                   </button>
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>
@@ -133,11 +134,11 @@ export function OrdersPage() {
               </div>
 
               <div className="product-actions">
-                <a href="/tracking">
+                <NavLink to="/tracking">
                   <button className="track-package-button button-secondary">
                     Track package
                   </button>
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>
