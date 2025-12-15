@@ -27,8 +27,8 @@ export function Header({ cart }) {
     <div className="header">
       <div className="left-section">
         <NavLink to="/" className="header-link">
-          <img className="logo" src="images/logo-white.png" />
-          <img className="mobile-logo" src="images/mobile-logo-white.png" />
+          <img className="logo" src="/images/white-logo.png" />
+          <img className="mobile-logo" src="/images/mobile-logo-white.png" />
         </NavLink>
       </div>
 
@@ -42,7 +42,7 @@ export function Header({ cart }) {
         />
 
         <button className="search-button" onClick={searchProducts}>
-          <img className="search-icon" src="images/icons/search-icon.png" />
+          <img className="search-icon" src="/images/icons/search-icon.png" />
         </button>
       </div>
 
