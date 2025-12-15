@@ -5,7 +5,9 @@ import { NavLink } from "react-router";
 import { OrdersGrid } from "./OrdersGrid";
 import "./OrdersPage.css";
 
-export function OrdersPage({ cart }) {
+window.axios = axios;
+
+export function OrdersPage({ cart, loadCart }) {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
@@ -26,7 +28,7 @@ export function OrdersPage({ cart }) {
       <div className="orders-page">
         <div className="page-title">Your Orders</div>
 
-        <OrdersGrid orders={orders} />
+        <OrdersGrid orders={orders} loadCart={loadCart} />
       </div>
     </>
   );
