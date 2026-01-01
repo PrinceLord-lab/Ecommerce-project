@@ -1,0 +1,21 @@
+.error {
+  padding-top: 100px;
+  text-align: center;
+}
+
+.error h2 {
+  font-style: italic;
+  margin: 0px;
+  font-weight: 300;
+}
+
+.error h1 {
+  margin-bottom: 8px;
+  font-size: 80px;
+}
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
